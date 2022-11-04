@@ -1,0 +1,85 @@
+@import './../../index.scss';
+
+.wrapper_list {
+  @include flex-center;
+  position: relative;
+
+  .list {
+    @include flex-center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+    position: relative;
+    margin-top: 60px;
+  }
+}
+
+/* table view */
+.wrapper_table {
+  @include flex-center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  .pagination {
+    @include flex-center;
+    position: absolute;
+    top: 12px;
+
+    button {
+      padding: 8px;
+      margin: 8px;
+    }
+  }
+
+  .list {
+    @include flex-center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    position: relative;
+    margin-top: 60px;
+  }
+
+  .wrapper_item, .wrapper_item_selected {
+    height: 100px;
+
+    .item__img {
+      @include flex-center;
+      margin: 0 auto;
+      height: 0;
+      max-width: 0;
+    }
+
+    .item__text {
+      border-radius: 20px;
+    }
+  }
+}
+
+/* pagination */
+.pagination {
+  @include flex-center;
+  position: absolute;
+  top: 12px;
+
+  button {
+    @include flex-center;
+    padding: 8px;
+    margin: 8px;
+    background: dodgerblue;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0.5;
+  }
+  .active {
+    background: dodgerblue;
+    opacity: 1;
+  }
+}

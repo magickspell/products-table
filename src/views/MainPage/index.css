@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: antiquewhite;
+  min-width: 600px;
+}
+
+.wrapper_main {
+  position: relative;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: 100vh;
+}
+
+/*# sourceMappingURL=index.css.map */
